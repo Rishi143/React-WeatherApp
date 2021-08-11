@@ -1,0 +1,62 @@
+.weatherCard {
+    width: 50%;
+    height:fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: cadetblue;
+    border: 3px solid tomato;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.weatherIconAndText {
+    display: flex;
+    margin: auto;
+}
+
+.weatherImg {
+    width: 100px;
+    height: 100px;
+    align-self: center;
+}
+
+.tempText {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.tempText1 {
+    margin: 15px 0 !important;
+}
+
+.weatherImg,.tempText {
+    margin: 20px;
+}
+
+.gridImage {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.card {
+    width: 500px;
+    margin: auto;
+}
+
+.search {
+    margin:10px 0 !important;
+}
+
+.tempInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.weatherImage {
+    margin: auto;
+}

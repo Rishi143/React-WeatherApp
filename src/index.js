@@ -3,11 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Register from './Register';
+import Weather from './Weather';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  // <React.StrictMode>
+  <div className='indexDiv'>
+    <Weather />
+  </div>
+  // </React.StrictMode>,
+  ,
   document.getElementById('root')
 );
 
