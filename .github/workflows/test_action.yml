@@ -22,4 +22,4 @@ jobs:
     - name: Show env variables
       run: |
           cat .env
-          sh .github/builds/buildfile.sh
+          sh ./build.sh
