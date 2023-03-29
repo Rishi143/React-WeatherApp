@@ -5,11 +5,17 @@ on:
     branches: action-env-test
 
 jobs:
-  steps:
-  
-  - name: Checkout repository
-    uses: actions/checkout@v3
-  
-  - name: echo str
-    run: |
-      echo "str"
+  analyze:
+    name: Analyze
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+    strategy:
+      fail-fast: false
+      matrix:
+        language: [ 'javascript' ]
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
