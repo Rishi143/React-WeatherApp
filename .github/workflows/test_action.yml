@@ -1,0 +1,15 @@
+name: "test env variable"
+
+on:
+  push:
+    branches: action-env-test
+
+jobs:
+  steps:
+  
+  - name: Checkout repository
+    uses: actions/checkout@v3
+  
+  - name: echo str
+    run: |
+      echo "str"
