@@ -19,9 +19,10 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
-    - name: npm build
+    - name: shell run
       run: |
-          sh ./build.sh
-          cat .vars | export
+          while read line; do
+              echo $line
+          done < ./vars.txt
           echo $VERSION
           echo $VERSION1
