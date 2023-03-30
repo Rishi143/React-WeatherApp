@@ -22,7 +22,7 @@ jobs:
     - name: shell run
       run: |
           while read line; do
-              echo $line
+              export $line
           done < ./vars.txt
           echo $VERSION
           echo $VERSION1
