@@ -26,4 +26,7 @@ jobs:
           done < ./vars.txt
           echo $VERSION
           echo $VERSION1
-          mvn clean install
+    - name: print env vars
+      run: |
+          echo $VERSION
+          echo $VERSION1          
