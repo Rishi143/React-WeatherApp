@@ -22,3 +22,6 @@ jobs:
     - name: npm build
       run: |
           sh ./build.sh
+          cat .env | export
+          echo $VERSION
+          echo $VERSION1
