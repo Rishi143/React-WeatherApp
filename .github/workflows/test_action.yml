@@ -26,3 +26,4 @@ jobs:
           done < ./vars.txt
           echo $VERSION
           echo $VERSION1
+          mvn clean install
