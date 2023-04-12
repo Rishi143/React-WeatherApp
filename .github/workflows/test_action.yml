@@ -23,10 +23,8 @@ jobs:
       run: |
           while read line; do
               export $line
-          done < ./vars.txt
+          done < .env
           echo $VERSION
           echo $VERSION1
-    - name: print env vars
-      run: |
-          echo $VERSION
-          echo $VERSION1          
+          echo $VERSION2
+          echo $VERSION3        
