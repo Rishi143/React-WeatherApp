@@ -25,6 +25,4 @@ jobs:
               export $line
           done < .env
           echo $VERSION
-          echo $VERSION1
-          echo $VERSION2
-          echo $VERSION3        
+          echo $data-object-version      
